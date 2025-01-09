@@ -1,16 +1,21 @@
 import React from 'react';
-import { navItems } from "../constants";
 
 const Footer = () => {
+  const navItems = [
+    { label: "Home", href: "#home" },
+    { label: "About", href: "#about" },
+    { label: "Projects", href: "#projects" },
+    { label: "Contact me", href: "#Contact" }
+  ];
   return (
-    <footer className="mt-20 border-t py-8 border-neutral-700 flex justify-between pt-4 text-sm px-2">
-      <div className='flex flex-col gap-2 text-left'>
-        <a className="text-green-600 hover:text-green-500 transition-all" href="https://github.com/isadockter/react-portfolio">GitHub/Code</a>
-        <span className='text-xs'>made by Isa Dockter w React/Vite & Tailwind</span>
+    <footer className="mt-20 border-t py-8 border-neutral-700 flex justify-between pt-4  px-2">
+      <div className='flex  gap-2 '>
+       
+        <h1>All right reserved © by S...j P.....</h1>
       </div>
-      <div className='flex flex-col gap-2 text-right'>
+      <div className='flex gap-4'>
         {navItems.map((item, index) => (
-          <a key={index} className="text-blue-500 hover:text-blue-300 hover:scale-105 transition-all" href={item.href}>{item.label}</a>
+          <a key={index} className="text-red-500 hover:text-blue-300 hover:scale-105 transition-all" href={item.href}>{item.label}</a>
         ))}
       </div>
     </footer>

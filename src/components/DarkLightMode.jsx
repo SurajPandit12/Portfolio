@@ -24,6 +24,7 @@ const DarkModeToggle = () => {
         document.documentElement.style.setProperty('color-scheme', scheme);
     };
 
+    
     // toggles between light/dark mode
     const toggleDarkMode = () => {
         const newMode = !isDarkMode;

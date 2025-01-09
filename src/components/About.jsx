@@ -1,9 +1,3 @@
-import HoverImg from './HoverImg';
-import aboutImg from '../assets/blueblop.jpg';
-import about1 from '../assets/ab1.jpeg';
-import about2 from '../assets/ab2.jpeg';
-import about3 from '../assets/ab3.jpeg';
-import about4 from '../assets/ab4.jpg';
 
 
 import Tabs from './Tabs';
@@ -15,27 +9,23 @@ const About = () => {
 
 
                 <div className="flex flex-wrap-reverse justify-center gap-8">
-                    <div className="grid grid-cols-2 gap-2 max-w-[400px] lg:w-1/3">
-                        <HoverImg imageUrl={about1} text="My Cat, Reece <3" />
-                        <HoverImg imageUrl={about2} text="SureGrip Boardwalk Rollerskates are solid beginner skates! My Go-To :)" />
-                        <HoverImg imageUrl={about4} text="Some printmaking!" />
-                        <HoverImg imageUrl={about3} text="Reece and I chillin " />
-                    </div>
+                   
                     <div className="w-full lg:w-1/2">
                         <div className='mb-2 border-b border-neutral-700 pb-2'>
-                            <a href="https://idockter8010.myportfolio.com/digital-art text-sm"  target="_blank" className='float-right mx-2 my-3 border-2 hover:scale-105 hover:bg-gradient-to-l transition-all px-2 rounded-md border-pink-500 font-medium text-pink-400'>Art Portfolio</a>
+                            <h2 className='text-xl lg:text-2xl font-bold underline text-center'>About Me</h2>
+                            <p className='text-md lg:text-l leading-8 pb-2 text-justify'>Hello! I'm Suraj Pandit, a dedicated and passionate individual currently pursuing my Bachelor of Information Management (BIM) at Nepal Commerce Campus. I'm in my final semester, delving deep into subjects like information systems, management, and software development, which align perfectly with my career aspirations in the tech industry.
 
-                            <h2 className='text-xl lg:text-2xl font-medium'>About Me</h2>
-                            <p className='text-md lg:text-l leading-8 pb-2'>I have always had a passion for art, taking as many art classes as I could & even continuing to pursue it after high school. Within the huge world of informatics and computing, I found that art fits really nicely into what I want to pursue. </p>
+My journey in technology has been enriched by practical experiences and active involvement in various roles. Currently, I'm interning at Nest Nepal as a front-end developer, where I contribute to building intuitive and user-friendly interfaces. This role allows me to combine my technical skills with creativity, enhancing user experiences and fostering engagement.
 
-                            <p className='text-md lg:text-l leading-8'>Outside of school, I enjoy listening to music, rollerskating, hanging out with friends, and relaxing with my cat.</p>
+Beyond academics and professional engagements, I have a strong inclination towards community service. My time as a volunteer with Nepal Scout has been profoundly rewarding. I have actively participated in organizing events, assisting in training programs, and contributing to community development initiatives. This experience has honed my leadership skills and deepened my commitment to making a positive impact on society. </p>
+
+                            <p className='text-md lg:text-l leading-8'>Recently, I have embarked on a new learning journey with Next.js, which has opened up new possibilities for building robust and scalable web applications. This continuous learning mindset drives my passion for technology and innovation.</p>
                         </div>
                         <Tabs />
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>
     )
 }
-
 export default About
